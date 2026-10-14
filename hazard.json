@@ -1,0 +1,47 @@
+{
+ "format": "avsim-studio/1",
+ "params": {
+  "cutT0": 1.9846125730925968,
+  "cutDur": 5.519700328430107,
+  "cutV": 12.247412030522542,
+  "pedT0": 16.100294216366752,
+  "pedV": 1.539538187528402,
+  "busGo": 20.788875041060457,
+  "cutDs": -7.151651740233841,
+  "tgT": 1.2731029565368037,
+  "mu": 0.8,
+  "cutGap": 8.518801121298594,
+  "cutBrake": 0.0,
+  "pedGap": 4.155952486282886,
+  "pedLook": 1,
+  "civil": true
+ },
+ "policy": {},
+ "hazards": [
+  {
+   "x": 162.5,
+   "side": "S",
+   "v": 2.0,
+   "t0": 0.0,
+   "trig": 37.5,
+   "type": "ped"
+  }
+ ],
+ "ego": "planner",
+ "space": {
+  "h0_x": [
+   140,
+   300
+  ],
+  "h0_v": [
+   1.0,
+   2.5
+  ],
+  "h0_trig": [
+   15,
+   45
+  ]
+ },
+ "exposure": 0.07,
+ "why": "Người băng ngang giữa đoạn phố (không có vạch), bước ra từ lề nam, ở đoạn x 140–300 m: cả đoạn phố từ sau vạch qua đường (x = 122) đến giới hạn bản đồ, nơi không có vạch nào. h0_v [1.0, 2.5] m/s: cận dưới ≈ tốc độ phân vị 15 của người ≥ 65 tuổi, 0,97 m/s (Knoblauch, Pietrucha & Nitzburg 1996, TRR 1538); cận trên = tốc độ đi bộ tối đa của nam 20–29 tuổi, 2,53 m/s (Bohannon 1997, Age and Ageing 26(1)), trùng ngưỡng 2,5 m/s của luật khả thi pedV: người vội qua đường. h0_trig [15, 45] m: người qua đường giữa đoạn chấp nhận khe thời gian trung vị 2,75 s, 85 % chấp nhận 3,65 s (Khaki & Mohammadnazar 2021, arXiv:2101.10903); ở khoảng 12 m/s của xe ta, 1,25–3,75 s tương ứng 15–45 m (từ người liều lĩnh đến phân vị 85). exposure 0,07 mỗi chuyến = 1 lượt người qua đường mỗi chuyến trên đoạn phố này (cùng giả định của thị trấn: mỗi kịch bản có một người P1 qua đường) × 13,89 % lượt qua đường là giữa đoạn, không vạch (Balk et al. 2014, FHWA-HRT-13-098, 20 điểm đo; dao động 3–37 %) × 1/2 đi từ lề nam. Vì sao đáng săn: 74–75 % người đi bộ tử vong ở Mỹ xảy ra ngoài giao lộ (NHTSA DOT HS 813 590, 813 727). Chưa có số liệu Hà Nội/TP HCM về tỉ lệ qua đường giữa đoạn, nên 0,07 là ước lượng theo nguồn Mỹ, không phải số đo tại chỗ."
+}
